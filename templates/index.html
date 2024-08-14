@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crop Yield Prediction</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1 class="text-center">Crop Yield Prediction</h1>
+      <form action="/predict" method="post" class="mt-4">
+        <div class="form-group">
+          <label for="crop">Crop:</label>
+          <select id="crop" name="crop" class="form-control" required>
+            {% for crop in crops %}
+            <option value="{{ crop }}">{{ crop }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="season">Season:</label>
+          <select id="season" name="season" class="form-control" required>
+            {% for season in seasons %}
+            <option value="{{ season }}">{{ season }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="state">State:</label>
+          <select id="state" name="state" class="form-control" required>
+            {% for state in states %}
+            <option value="{{ state }}">{{ state }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="area">Area (in hectares):</label>
+          <input type="number" id="area" name="area" class="form-control" required />
+        </div>
+        <div class="form-group">
+          <label for="production">Production (in metric tons):</label>
+          <input type="number" id="production" name="production" class="form-control" required />
+        </div>
+        <div class="form-group">
+          <label for="rainfall">Annual Rainfall (in mm):</label>
+          <input type="number" id="rainfall" name="rainfall" class="form-control" required />
+        </div>
+        <div class="form-group">
+          <label for="fertilizer">Fertilizer (in kilograms):</label>
+          <input type="number" id="fertilizer" name="fertilizer" class="form-control" required />
+        </div>
+        <div class="form-group">
+          <label for="pesticide">Pesticide (in kilograms):</label>
+          <input type="number" id="pesticide" name="pesticide" class="form-control" required />
+        </div>
+        <button type="submit" class="btn btn-primary">Predict</button>
+      </form>
+
+      {% if prediction_text %}
+      <div class="mt-4 alert alert-success">
+        <h4>{{ prediction_text }}</h4>
+      </div>
+      {% endif %}
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

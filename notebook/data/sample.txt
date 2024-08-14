@@ -1,0 +1,30 @@
+Karnataka            
+Andhra Pradesh       
+West Bengal          
+Chhattisgarh         
+Bihar                
+Madhya Pradesh       
+Uttar Pradesh        
+Tamil Nadu           
+Gujarat              
+Maharashtra          
+Uttarakhand          
+Odisha               
+Assam                
+Nagaland             
+Puducherry           
+Meghalaya            
+Haryana              
+Jammu and Kashmir    
+Himachal Pradesh     
+Kerala               
+Manipur              
+Tripura              
+Mizoram              
+Telangana            
+Punjab               
+Arunachal Pradesh    
+Jharkhand            
+Goa                  
+Sikkim               
+Delhi

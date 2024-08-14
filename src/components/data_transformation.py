@@ -22,7 +22,7 @@ class DataTransformation:
     
   def get_data_transformer_object(self):
     try:
-      categorical_columns = ['Crop','State','Season']
+      categorical_columns = ['Crop','Season','State']
       numerical_columns = ['Area','Production','Annual_Rainfall','Fertilizer','Pesticide']
       
       num_pipeline = Pipeline(
