@@ -75,8 +75,3 @@ The dataset used for this project includes agricultural data from multiple crops
 2. **Data Transformation:** Features are preprocessed, including handling missing values, encoding categorical variables, and scaling numerical features.
 3. **Model Training:** A regression model is trained using the processed data.
 4. **Prediction Pipeline:** The model is used to predict crop yield based on user inputs provided through the web application.
-
-## Acknowledgements
-
-- The dataset is sourced from public agricultural data available for research and educational purposes.
-- This project was developed as a part of a machine learning and web application development portfolio.
