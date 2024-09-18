@@ -34,7 +34,7 @@ The dataset used for this project includes agricultural data from multiple crops
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/crop-yield-prediction.git
+   git clone https://github.com/ishir21/crop-yield-prediction.git
    cd crop-yield-prediction
    ```
 
